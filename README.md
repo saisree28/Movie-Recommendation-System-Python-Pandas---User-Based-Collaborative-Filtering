@@ -2,7 +2,7 @@
 
 The Dataquest movie recommendation project is built on two primary technical concepts: Natural Language Processing (NLP) for searching and User-Based Collaborative Filtering for generating recommendations.
 
-***1. Data Architecture***:  
+***1. Data Architecture***:    
 
 The project uses the MovieLens 25M dataset, which is structured into two primary tables:  
 

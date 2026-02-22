@@ -38,7 +38,7 @@ This is the most critical part of the code. The system calculates a Score to ran
  2.	Global Percentage: What percentage of all users in the entire 25M dataset liked Movie X?
  3.	The Ratio (Relative Popularity): 
 
-$$\text{Score} = \frac{\text{Similar Users \%}}{\text{General Users \%}}$$
+$$Score = \frac{Similar\_Users\%}{General\_Users\%}$$
 
 ***4. UI Implementation: The Observer Pattern***:  
 
@@ -51,7 +51,7 @@ The project uses ipywidgets to create a reactive loop:
 
  •	Pandas: Vectorized operations on 25M rows.  
  
- •	Scikit-Learn: TfidfVectorizer for text processing.  
+ •	Scikit-Learn: Tfidf Vectorizer for text processing.  
  
  •	NumPy: np.argpartition for high-speed sorting of recommendation scores.
  

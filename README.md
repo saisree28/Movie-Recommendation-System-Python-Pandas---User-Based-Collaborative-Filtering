@@ -49,9 +49,12 @@ The project uses ipywidgets to create a reactive loop:
 
 ***5. Technical Stack Summary***:  
 
- •	Pandas: Vectorized operations on 25M rows.
- •	Scikit-Learn: TfidfVectorizer for text processing.
+ •	Pandas: Vectorized operations on 25M rows.  
+ 
+ •	Scikit-Learn: TfidfVectorizer for text processing.  
+ 
  •	NumPy: np.argpartition for high-speed sorting of recommendation scores.
+ 
  •	Regex: String cleaning to prevent search misses due to punctuation.
 
 

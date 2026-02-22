@@ -8,6 +8,8 @@ The project uses the MovieLens 25M dataset, which is structured into two primary
   •	Movies Metadata: (movieId, title, genres) - Used for the search engine.
   •	Ratings Data: (userId, movieId, rating, timestamp) - Used for the recommendation engine.
 
+  
+
 ***2. Search Engine: TF-IDF & Vector Space Modeling***:  
 
 The search engine is the "Entry Point." It uses a technique called Vectorization to understand text.
@@ -22,6 +24,7 @@ When a user types a query, it is converted into a vector. The system then calcul
 $$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
 
 This measures the cosine of the angle between two vectors. An angle of $0^\circ$ ($\cos = 1$) means the titles are identical.
+
 
 
 ***3. Recommendation Logic: Collaborative Filtering*** :  
@@ -40,12 +43,16 @@ This is the most critical part of the code. The system calculates a Score to ran
 
       Score = (SimilarUsersLikeX%) / (GeneralUsersLikeX%)
 
+    
+
 ***4. UI Implementation: The Observer Pattern***:  
 
 The project uses ipywidgets to create a reactive loop:
  1.	Input Widget: A text box that monitors "on_type" events.
  2.	Observer Function: Every time the text changes, it triggers a Python function.
  3.	Display Engine: Uses IPython.display to clear the previous output and render a new HTML table of the top 10 movies.
+
+    
 
 ***5. Technical Stack Summary***:  
 

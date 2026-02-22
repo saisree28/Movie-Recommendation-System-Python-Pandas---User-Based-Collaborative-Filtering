@@ -19,7 +19,7 @@ The system builds a TF-IDF Matrix ($Term Frequency \times Inverse Document Frequ
 Similarity Metric
 When a user types a query, it is converted into a vector. The system then calculates the Cosine Similarity between the query vector ($A$) and every movie title vector ($B$):
 
-$$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
+$$\text{Score} = \frac{\% \text{ of Similar Users who liked Movie X}}{\% \text{ of General Users who liked Movie X}}$$
 
 This measures the cosine of the angle between two vectors. An angle of $0^\circ$ ($\cos = 1$) means the titles are identical.
 

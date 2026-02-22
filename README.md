@@ -6,7 +6,8 @@ The Dataquest movie recommendation project is built on two primary technical con
 
 The project uses the MovieLens 25M dataset, which is structured into two primary tables:
   •	Movies Metadata: (movieId, title, genres) - Used for the search engine.
-  •	Ratings Data: (userId, movieId, rating, timestamp) - Used for the recommendation engine.
+  •	Ratings Data: (userId, movieId, rating, timestamp) - Used for the recommendation engine.  
+  
 
   
 
@@ -23,7 +24,8 @@ When a user types a query, it is converted into a vector. The system then calcul
 
 $$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
 
-This measures the cosine of the angle between two vectors. An angle of $0^\circ$ ($\cos = 1$) means the titles are identical.
+This measures the cosine of the angle between two vectors. An angle of $0^\circ$ ($\cos = 1$) means the titles are identical.  
+
 
 
 
@@ -51,6 +53,7 @@ The project uses ipywidgets to create a reactive loop:
  1.	Input Widget: A text box that monitors "on_type" events.
  2.	Observer Function: Every time the text changes, it triggers a Python function.
  3.	Display Engine: Uses IPython.display to clear the previous output and render a new HTML table of the top 10 movies.
+    
 
     
 

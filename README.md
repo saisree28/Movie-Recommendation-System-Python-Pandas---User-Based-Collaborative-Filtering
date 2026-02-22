@@ -4,8 +4,10 @@ The Dataquest movie recommendation project is built on two primary technical con
 
 ***1. Data Architecture***:  
 
-The project uses the MovieLens 25M dataset, which is structured into two primary tables:
-  •	Movies Metadata: (movieId, title, genres) - Used for the search engine.
+The project uses the MovieLens 25M dataset, which is structured into two primary tables:  
+
+  •	Movies Metadata: (movieId, title, genres) - Used for the search engine.  
+  
   •	Ratings Data: (userId, movieId, rating, timestamp) - Used for the recommendation engine.  
   
 

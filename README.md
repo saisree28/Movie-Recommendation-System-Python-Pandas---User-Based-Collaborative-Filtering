@@ -38,7 +38,7 @@ This is the most critical part of the code. The system calculates a Score to ran
  2.	Global Percentage: What percentage of all users in the entire 25M dataset liked Movie X?
  3.	The Ratio (Relative Popularity): 
 
-$$\text{Score} = \frac{\text{\% of Similar Users who liked Movie X}}{\text{\% of General Users who liked Movie X}}$$
+Score = (SimilarUsersLikeX%) / (GeneralUsersLikeX%)
 
 ***4. UI Implementation: The Observer Pattern***:  
 
